@@ -5,19 +5,19 @@
 
 def evaluateLowest(fN, sN, tN):
     if fN < sN and fN < tN:
-        print(f'{fN} is the lowest number among the three.')
+        print(f'{fN} is the lowest number.')
     elif sN < fN and sN < tN:
-        print(f'{sN} is the lowest number among the three.')
+        print(f'{sN} is the lowest number.')
     elif tN < fN and tN < sN :
-        print(f'{tN} is the lowest number among the three.')
+        print(f'{tN} is the lowest number.')
     elif fN == sN and fN < tN:
-        print(f'{fN} is the lowest number among the three.')
+        print(f'{fN} is the lowest number.')
     elif fN == tN and fN < sN:
-        print(f'{fN} is the lowest number among the three.')
+        print(f'{fN} is the lowest number.')
     elif sN == tN and sN < fN:
-        print(f'{sN} is the lowest number among the three.')
+        print(f'{sN} is the lowest number.')
     else:
-        print(f'{fN} is the lowest number among the three.')
+        print(f'{fN} is the lowest number.')
 
 print('Which is the Lowest Number?')
 print('Note: Decimals are not accepted.')
