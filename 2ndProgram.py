@@ -3,17 +3,27 @@
 # Find the lowest numer using only if-else statement.
 # Display the lowest number
 
-def evaluateLowest(firstN_, secondN_, thirdN_):
-    if firstN_ < secondN_ and firstN_ < thirdN_:
-        print(f'{firstN_} is the lowest number among the three.')
+    # elif fN == sN or fN == tN or sN == tN and fN < sN or fN < tN or sN < tN:
+    #     print(f'{fN} is the lowest number among the three.')
+
+def evaluateLowest(fN, sN, tN):
+    if fN < sN and fN < tN:
+        print(f'{fN} is the lowest number among the three.')
+    elif sN < fN and sN < tN:
+        print(f'{sN} is the lowest number among the three.')
+    elif tN < fN and tN < sN :
+        print(f'{tN} is the lowest number among the three.')
+    elif fN == sN and fN < tN:
+        print(f'{fN} is the lowest number among the three.')
+    elif fN == tN and fN < sN:
+        print(f'{fN} is the lowest number among the three.')
+    elif sN == tN and sN < fN:
+        print(f'{sN} is the lowest number among the three.')
     else:
-        if secondN_ < firstN_ and secondN_ < thirdN_:
-            print(f'{secondN_} is the lowest number among the three.')
-        else:
-            if thirdN_ < firstN_ and thirdN_ < secondN_ :
-                print(f'{secondN_} is the lowest number among the three.')
+        print(f'{fN} is the lowest number among the three.')
 
 print('Which is the Lowest Number?')
+print('Note: Decimals are not accepted.')
 
 firstNumber = int(input('Insert the first number of your choice: '))
 secondNumber = int(input('Insert the second number of your choice: '))
