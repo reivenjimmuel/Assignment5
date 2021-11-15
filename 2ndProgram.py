@@ -3,9 +3,6 @@
 # Find the lowest numer using only if-else statement.
 # Display the lowest number
 
-    # elif fN == sN or fN == tN or sN == tN and fN < sN or fN < tN or sN < tN:
-    #     print(f'{fN} is the lowest number among the three.')
-
 def evaluateLowest(fN, sN, tN):
     if fN < sN and fN < tN:
         print(f'{fN} is the lowest number among the three.')
