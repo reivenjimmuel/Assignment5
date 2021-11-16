@@ -1,12 +1,3 @@
-# Program 1: PUP Grading System
-# Create a pogram that will ask for grade percentage.
-# Display the equivalent Grade/Mark and Description.
-# Example:
-# Input grade: 87.6
-# Grade/Mark: 1.75
-# Description: Very Good
-
-
 def evaluate(grade):
     if grade >= 97 and grade <= 100:
         print('Grade/Mark: 1.00')
@@ -44,7 +35,7 @@ def evaluate(grade):
 import math
 
 print('Welcome to PUP Grading System!')
-print('Kinly follow the instructions to evaluate your grade percentage.')
+print('Kindly follow the instructions to evaluate your grade percentage.')
 
 studentStatus = input('Before you proceed, are you either incomplete, withdrawn, or dropped? Type YES if you are. If not, type NO: ').upper()
 if studentStatus == 'YES':
